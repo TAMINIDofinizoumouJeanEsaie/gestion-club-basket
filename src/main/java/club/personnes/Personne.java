@@ -58,7 +58,7 @@ public abstract class Personne {
         if (telephone == null) {
             throw new DonneeInvalideException("Le téléphone ne peut pas être null.");
         }
-        String cleanTel = telephone.replaceAll("\s+", "");
+        String cleanTel = telephone.replaceAll("\\s+", "");
         if (!cleanTel.matches("^\\d{8}$")) {
             throw new DonneeInvalideException("Le téléphone doit comporter exactement 8 chiffres.");
         }
