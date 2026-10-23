@@ -1,4 +1,4 @@
-# Gestion du club de basket (Basket Club Bobo)
+# Gestion du club de basket (BIT Basket Club)
 
 Projet de groupe de Programmation Orientée Objet, BIT 2e année. Java 17, Maven, JUnit 5.
 
