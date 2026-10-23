@@ -30,7 +30,7 @@ class MenuTest {
         try {
             System.setIn(new ByteArrayInputStream(saisie.getBytes(StandardCharsets.UTF_8)));
             System.setOut(new PrintStream(capture, true, StandardCharsets.UTF_8));
-            Menu menu = new Menu(new Club("Basket Club Bobo"));
+            Menu menu = new Menu(new Club("BIT Basket Club"));
             menu.demarrer();
         } finally {
             System.setIn(ancienneEntree);
@@ -48,7 +48,7 @@ class MenuTest {
     @Test
     void menuAfficheLeNomDuClub() {
         String sortie = lancer("0\n");
-        assertTrue(sortie.contains("Basket Club Bobo"));
+        assertTrue(sortie.contains("BIT Basket Club"));
     }
 
     @Test
